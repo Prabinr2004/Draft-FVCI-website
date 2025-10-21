@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('Background.png') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-text {
+  background: rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 60px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* clickable card style */
+.cards a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  background: #222;
+  border-radius: 10px;
+  width: 280px;
+  padding: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cards a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  background: #333;
+}
+
+.cards a img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.cards a h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.cards a p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff; /* ✅ makes the small text white */
+}
+
+.cards a strong {
+  color: #fff;
+}
